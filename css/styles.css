@@ -21,6 +21,12 @@ body {
     text-align: center;
 }
 
+.objects-box--inputs {
+
+    margin-bottom: 30px;
+
+}
+
 .objects-box .objects-box--title {
 
     margin-bottom: 40px;
@@ -44,7 +50,6 @@ body {
     align-items: flex-start;
 
 }
-
 
 
 #dibujito {
@@ -77,5 +82,17 @@ input[type="button"] {
     background-color: rgb(114, 212, 114);
     color: white;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type="color"] {
+
+    cursor: pointer;
+
+}
+
+input {
+
+    outline: none;
     
 }
