@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
     <div class="objects-box">
         <div class="objects-box--title">
             <h1>Dibuja tus formas con Canvas</h1>
@@ -17,12 +16,20 @@
         </div>
         <div class="objects-box--inputs">
             <div class="objects-box--inputs_forms">
+                <h3>Forma de tu dibujo</h3>
+                <div class="form-element">
+                    <label for="lineas">
+                        Dirección de forma
+                    </label>
+                    <input type="text" name="lines" id="lineas">
+                </div>
                 <div class="form-element">
                     <label for="lineas">
                         Cantidad de líneas
                     </label>
                     <input type="text" name="lines" id="lineas">
                 </div>
+                <h3>Características</h3>
                 <div class="form-element nou">
                     <label for="color">
                         Color de líneas
@@ -30,14 +37,12 @@
                     <input type="color" name="color" id="colorsito">
                 </div>
             </div>
-
-            <input type="button" value="Generar" id="boton">
-            <input type="button" value="Limpiar" id="c_canvas">
-
+            <input type="button" value="Generar" id="boton" class="nou">
+            <input type="button" value="Limpiar" id="c_canvas" class="nou">
         </div>  
-        <canvas height="500px" width="500px" id="dibujito">
-        </canvas>
-        <script type="text/Javascript" src="js/program.js"></script>
+    </canvas>
+    <canvas height="500px" width="500px" id="dibujito">
+    <script type="text/Javascript" src="js/program.js"></script>
     </div>
 
     

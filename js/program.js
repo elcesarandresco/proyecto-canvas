@@ -9,10 +9,14 @@ var clear = document.getElementById("c_canvas");
 boton.addEventListener("click", drawcanvas);
 clear.addEventListener("click", clearcanvas);
 
+/* se genera el contexto del canvas*/
 var d = document.getElementById("dibujito");
 var lienzo = d.getContext("2d");
 var ancho = d.width;
 
+/* se definen las funciones que se van a utilizar*/
+
+// Función para dibujar canvas
 function canvasfunction(color, xinicial, yinicial, xfinal, yfinal) {
     
     lienzo.beginPath();
@@ -24,13 +28,14 @@ function canvasfunction(color, xinicial, yinicial, xfinal, yfinal) {
 
 }
 
+// Función para limpiar el canvas
 function clearcanvas () {
     
     lienzo.clearRect(0, 0, d.width, d.height);
     console.log("Se limpió canvas correctamente");
 }
 
-/* Crear función que dibuje en el canvas */
+// Crear función que dibuje en el canvas al presionar click 
 function drawcanvas() {
     
     color = clr.value;
